@@ -1,11 +1,12 @@
 package core
 
 import (
-	"github.com/gorilla/mux"
 	"net/http"
 	"time"
 
-	"github.com/kgretzky/evilginx2/log"
+	"github.com/gorilla/mux"
+
+	"github.com/johnc2k/evilginx2/log"
 )
 
 type HttpServer struct {

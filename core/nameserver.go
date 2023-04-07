@@ -1,13 +1,14 @@
 package core
 
 import (
-	"github.com/miekg/dns"
 	"net"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/kgretzky/evilginx2/log"
+	"github.com/miekg/dns"
+
+	"github.com/johnc2k/evilginx2/log"
 )
 
 type Nameserver struct {
