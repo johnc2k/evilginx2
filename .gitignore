@@ -5,3 +5,4 @@ release/
 build/
 phishlets/test-*
 __debug_bin
+.vscode/launch.json
