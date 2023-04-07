@@ -70,7 +70,7 @@ const (
 	CFG_BLACKLIST_MODE     = "blacklist_mode"
 )
 
-const DEFAULT_REDIRECT_URL = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" // Rick'roll
+const DEFAULT_REDIRECT_URL = "https://www.google.com/"
 
 func NewConfig(cfg_dir string, path string) (*Config, error) {
 	c := &Config{
